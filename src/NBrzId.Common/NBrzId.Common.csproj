@@ -6,11 +6,12 @@
     <BaseOutputPath>bin\</BaseOutputPath>
     <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
     <PackageId>NBrzId.Common</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.1.2</Version>
     <Authors>Christian Martins</Authors>
     <Description>Implementation of common types used for Brazilian identifiers management (validation, formatting etc.)</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/Preulo123/NBrzId</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Preulo123/NBrzId.Common</RepositoryUrl>
+    <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Label="FineCodeCoverage">
@@ -18,5 +19,9 @@
       ExcludeFromCodeCoverage
     </ExcludeByAttribute>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="/" />
+  </ItemGroup>
 
 </Project>
