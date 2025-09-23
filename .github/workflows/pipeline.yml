@@ -7,8 +7,19 @@ on:
     branches: [ "main" ]
 
 jobs:
+  validate-pr-description:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail if PR description is empty
+        run: |
+          if [ -z "${{ github.event.pull_request.body }}" ]; then
+            echo "Pull request description is required."
+            exit 1
+          fi
+
   test:
     runs-on: ubuntu-latest
+    needs: validate-pr-description
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
