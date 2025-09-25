@@ -9,7 +9,7 @@
     /// and access to properties specific to CNPJ identifiers. 
     /// <list type="bullet">
     ///     <item><description><see cref="Length"/> indicates the standard number of digits in a CNPJ (14 digits).</description></item>
-    ///     <item><description><see cref="Mask"/> defines the CNPJ format, e.g., "NN.NNN.NNN/NNNN-NN".</description></item>
+    ///     <item><description><see cref="Mask"/> defines the CNPJ format, e.g., "XX.XXX.XXX/XXXX-NN".</description></item>
     ///     <item><description><see cref="FormattingCharacters"/> specifies CNPJ formatting symbols (periods, slashes, and hyphen).</description></item>
     ///     <item><description><see cref="PaddingCharacter"/> specifies a character used for left padding the identifier if the provided value is shorter than <see cref="Length"/>.</description></item>
     /// </list>
@@ -20,7 +20,7 @@
         internal static Cnpj Instance => _instance;
 
         public override int    Length           => 14;
-        public override string Mask             => "NN.NNN.NNN/NNNN-NN";
+        public override string Mask             => "XX.XXX.XXX/XXXX-NN";
         public override char   PaddingCharacter => '0';
 
         static Cnpj()
@@ -32,3 +32,4 @@
         { }
     }
 }
+
