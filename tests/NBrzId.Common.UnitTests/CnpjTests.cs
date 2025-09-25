@@ -33,7 +33,7 @@ namespace NBrzId.Common.Tests
         {
             var actual = Cnpj.Instance.Mask;
 
-            Assert.Equal("NN.NNN.NNN/NNNN-NN", actual);
+            Assert.Equal("XX.XXX.XXX/XXXX-NN", actual);
         }
 
         [Fact]
@@ -44,4 +44,5 @@ namespace NBrzId.Common.Tests
             Assert.Equal('0', actual);
         }
     }
+
 }
