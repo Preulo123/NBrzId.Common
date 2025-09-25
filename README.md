@@ -21,6 +21,8 @@ This library introduces types specifically designed to handle Brazilian identifi
 - **`BrzIdentifier`**: A static access point providing singleton instances of `Cpf` and `Cnpj`.
 - **`BaseBrzIdentifier`**: An abstract class with a default implementation for the property `FormattingCharacters`.
 
+Release `v1.0.0` included changes to support the new alphanumeric CNPJ format according to "Instrução Normativa RFB nº 2229".
+
 ## Getting Started
 
 ### Installation
@@ -28,7 +30,7 @@ This library introduces types specifically designed to handle Brazilian identifi
 To include this library in your .NET project, add it as a dependency via NuGet:
 
 ```sh
-dotnet add package NBrzId.Common --version 0.1.0
+dotnet add package NBrzId.Common --version 1.0.0
 ```
 
 ## Usage
@@ -66,9 +68,7 @@ This library targets .NET Standard 2.0, ensuring compatibility with .NET Core, .
 
 ## Roadmap
 
-This library is in active development. Planned features for future releases include:
-- Support for the new CNPJ format, which includes letters
-- Additional Brazilian identifiers (IE, Suframa) as needed
+This library is in active development. Planned features for future releases include additional Brazilian identifiers (IE, Suframa, PIS) as needed
 
 ## Contributing
 
