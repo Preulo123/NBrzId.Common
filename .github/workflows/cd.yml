@@ -1,0 +1,14 @@
+name: CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-cd:
+    uses: Preulo123/common-workflows/.github/workflows/cd.yml@main
+    with:
+      project-path: src/NBrzId.Common/NBrzId.Common.csproj
+    secrets:
+      NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
