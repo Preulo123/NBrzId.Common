@@ -30,7 +30,7 @@ Release `v1.0.0` included changes to support the new alphanumeric CNPJ format ac
 To include this library in your .NET project, add it as a dependency via NuGet:
 
 ```sh
-dotnet add package NBrzId.Common --version 1.0.0
+dotnet add package NBrzId.Common --version 1.0.1
 ```
 
 ## Usage
@@ -68,7 +68,7 @@ This library targets .NET Standard 2.0, ensuring compatibility with .NET Core, .
 
 ## Roadmap
 
-This library is in active development. Planned features for future releases include additional Brazilian identifiers (IE, Suframa, PIS) as needed
+This library is in active development. Planned features for future releases include additional Brazilian identifiers (IE, Suframa, PIS) as needed.
 
 ## Contributing
 
