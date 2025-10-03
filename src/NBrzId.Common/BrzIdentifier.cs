@@ -9,7 +9,13 @@
     /// </remarks>
     public static class BrzIdentifier
     {
+        /// <summary>
+        /// Exposes an instance of the CNPJ identifier.
+        /// </summary>
         public static Cnpj Cnpj => Cnpj.Instance;
+        /// <summary>
+        /// Exposes an instance of the CPF identifier.
+        /// </summary>
         public static Cpf  Cpf  => Cpf.Instance;
     }
 }
